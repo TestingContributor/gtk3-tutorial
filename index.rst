@@ -52,6 +52,9 @@ Contents:
    treestore
    filechooserbutton
    colorbutton
+   colorchooserdialog
+   colorchooserwidget
+   colorchooser
    fontbutton
    infobar
    textview
