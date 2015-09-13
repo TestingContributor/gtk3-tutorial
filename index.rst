@@ -50,6 +50,8 @@ Contents:
    comboboxtext
    liststore
    treestore
+   treeview
+   textview
    filechooserbutton
    colorbutton
    colorchooserdialog
@@ -57,7 +59,6 @@ Contents:
    colorchooser
    fontbutton
    infobar
-   textview
    dialog
    aboutdialog
    messagedialog
