@@ -51,7 +51,9 @@ Contents:
    liststore
    treestore
    treeview
+   treeviewcolumn
    textview
+   textbuffer
    filechooserbutton
    colorbutton
    colorchooserdialog
