@@ -27,3 +27,8 @@ The *lines* and *total* defined the number of lines to allow, with a total numbe
 
 * ``GTK_ORIENTATION_VERTICAL``
 * ``GTK_ORIENTATION_HORIZONTAL``
+
+=======
+Example
+=======
+Please see the :doc:`colorbutton`, :doc:`colorchooserdialog` and :doc:`colorchooserwidget` for examples of ColorChooser usage.

@@ -54,12 +54,18 @@ Contents:
    treeviewcolumn
    textview
    textbuffer
+   filechooser
    filechooserbutton
+   filechooserdialog
+   filechooserwidget
+   colorchooser
    colorbutton
    colorchooserdialog
    colorchooserwidget
-   colorchooser
+   fontchooser
    fontbutton
+   fontchooserdialog
+   fontchooserwidget
    infobar
    dialog
    aboutdialog
