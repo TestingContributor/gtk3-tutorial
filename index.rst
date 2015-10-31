@@ -29,9 +29,11 @@ Contents:
    calendar
    scale
    scalebutton
+   volumebutton
    toolbar
    toolpalette
    statusbar
+   image
    frame
    aspectframe
    expander
@@ -43,6 +45,7 @@ Contents:
    headerbar
    levelbar
    progressbar
+   notebook
    stack
    stackswitcher
    stacksidebar
@@ -51,13 +54,25 @@ Contents:
    liststore
    treestore
    treeview
+   treeselection
    treeviewcolumn
+   cellrenderer
+   cellrenderertext
+   cellrenderertoggle
+   cellrendererpixbuf
+   cellrendererprogress
+   cellrendererspinner
+   cellrendererspin
+   cellrenderercombo
+   cellrendereraccel
    textview
    textbuffer
+   popover
    filechooser
    filechooserbutton
    filechooserdialog
    filechooserwidget
+   filefilter
    colorchooser
    colorbutton
    colorchooserdialog
@@ -66,11 +81,21 @@ Contents:
    fontbutton
    fontchooserdialog
    fontchooserwidget
+   appchooser
+   appchooserbutton
+   appchooserdialog
+   appchooserwidget
+   recentchooser
+   recentchoosermenu
+   recentchooserdialog
+   recentchooserwidget
+   recentfilter
    infobar
    dialog
    aboutdialog
    messagedialog
    assistant
+   windowgroup
 
 Indices and tables
 ==================
