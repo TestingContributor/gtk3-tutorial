@@ -23,6 +23,7 @@ Contents:
    entrycompletion
    entrybuffer
    searchentry
+   searchbar
    buttonbox
    separator
    spinner
@@ -36,14 +37,18 @@ Contents:
    image
    frame
    aspectframe
+   commonframe
    expander
    revealer
    paned
+   layout
+   fixed
    flowbox
    listbox
    actionbar
    headerbar
    levelbar
+   overlay
    progressbar
    notebook
    stack
