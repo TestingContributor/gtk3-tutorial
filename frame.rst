@@ -11,7 +11,9 @@ Constructor
 ===========
 Construction of the Frame widget is done with::
 
-  GtkWidget *frame = gtk_frame_new();
+  GtkWidget *frame = gtk_frame_new(label);
+
+The *label* parameter should be set to a text string which will be displayed on the Frame outline.
 
 =======
 Methods

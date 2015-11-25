@@ -7,7 +7,7 @@ Constructor
 ===========
 The SizeGroup is constructed using the call::
 
-  sizegroup = Gtk.SizeGroup(mode);
+  GtkWidget *sizegroup = gtk_size_group_new(mode);
 
 The *mode* value should be set to the sizing type:
 

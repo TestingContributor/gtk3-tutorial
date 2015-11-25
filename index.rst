@@ -55,6 +55,7 @@ Contents:
    stack
    stackswitcher
    stacksidebar
+   scrolledwindow
    combobox
    comboboxtext
    liststore
