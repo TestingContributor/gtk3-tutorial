@@ -43,6 +43,7 @@ Contents:
    paned
    layout
    fixed
+   sizegroup
    flowbox
    listbox
    actionbar
