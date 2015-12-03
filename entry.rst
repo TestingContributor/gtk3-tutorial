@@ -69,6 +69,40 @@ The *icon_name* parameter is based on the list of icons supported by GTK+. Alter
 * ``GTK_ENTRY_ICON_PRIMARY``
 * ``GTK_ENTRY_ICON_SECONDARY``
 
+The purpose of the Entry can be defined, and is particularly useful for users of onscreen keyboards. This is set with the method::
+
+  gtk_entry_set_input_purpose(GTK_ENTRY(entry), purpose);
+
+The *purpose* argument should be set to one of:
+
+* ``GTK_INPUT_PURPOSE_FREE_FORM``
+* ``GTK_INPUT_PURPOSE_ALPHA``
+* ``GTK_INPUT_PURPOSE_DIGITS``
+* ``GTK_INPUT_PURPOSE_NUMBER``
+* ``GTK_INPUT_PURPOSE_PHONE``
+* ``GTK_INPUT_PURPOSE_URL``
+* ``GTK_INPUT_PURPOSE_EMAIL``
+* ``GTK_INPUT_PURPOSE_NAME``
+* ``GTK_INPUT_PURPOSE_PASSWORD``
+* ``GTK_INPUT_PURPOSE_PIN``
+
+Hints are also available which allow the input to be tailored as required. This is done via::
+
+  gtk_entry_set_input_hints(GTK_ENTRY(entry), hints);
+
+The *hints* value can be set to one of:
+
+* ``GTK_INPUT_HINT_NONE`` - no special behaviour.
+* ``GTK_INPUT_HINT_SPELLCHECK`` - suggest spell checking for errors.
+* ``GTK_INPUT_HINT_NO_SPELLCHECK`` - suggest no spell checking takes place.
+* ``GTK_INPUT_HINT_WORD_COMPLETION`` - suggestion word completion should be used.
+* ``GTK_INPUT_HINT_LOWERCASE`` - suggest to lowercase all text.
+* ``GTK_INPUT_HINT_UPPERCASE_CHARS`` - suggest to capitalise all text.
+* ``GTK_INPUT_HINT_UPPERCASE_WORDS`` - suggest to capitalise first letter in all words.
+* ``GTK_INPUT_HINT_UPPERCASE_SENTENCES`` - suggest to capitalise first word in each sentence.
+* ``GTK_INPUT_HINT_INHIBIT_OSK`` - suggest onscreen keyboard not be shown.
+* ``GTK_INPUT_HINT_VERTICAL_WRITING`` - text is vertical.
+
 =======
 Example
 =======
