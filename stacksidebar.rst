@@ -7,18 +7,18 @@ Constructor
 ===========
 A StackSidebar is constructed using::
 
-  stacksidebar = gtk_stack_sidebar_new();
+  GtkWidget *stacksidebar = gtk_stack_sidebar_new();
 
 =======
 Methods
 =======
 To associate the Stack with the StackSidebar call::
 
-  stacksidebar.set_stack(stack)
+  gtk_stack_sidebar_set_stack(GTK_STACK_SIDEBAR(stacksidebar), stack);
 
-Retrieval of the Stack associated can be made via::
+Retrieval of the associated Stack widget can be made via::
 
-  stacksidebar.get_stack()
+  gtk_stack_sidebar_get_stack(GTK_STACK_SIDEBAR(stacksidebar));
 
 =======
 Example

@@ -7,13 +7,13 @@ Constructor
 ===========
 A ComboBoxText is constructed with the call::
 
-  gtk_spin_button_new(adjustment, climb_rate, digits);
+  GtkWidget *spinbutton = gtk_spin_button_new(adjustment, climb_rate, digits);
 
 The *adjustment* parameter can be set to an :doc:`adjustment` object which handles the currently set value and minimum and maximum values. The *climb_rate* should be set to a value indicating how much the SpinButton changes when adjusted. Finally, the *digits* parameter specifies how many decimal places should be displayed, with setting ``0`` showing only whole numbers.
 
 An alternative constructor which specifies a range at initialisation is also available::
 
-  gtk_spin_button_new_with_range(minimum, maximum, step);
+  GtkWidget *spinbutton = gtk_spin_button_new_with_range(minimum, maximum, step);
 
 The *minimum* and *maximum* values indicate the lowest and highest accepted values in the SpinButton. The *step* value controls the adjustment amount when the user clicks the adjustment buttons.
 

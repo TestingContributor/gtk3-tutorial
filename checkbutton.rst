@@ -2,6 +2,21 @@ CheckButton
 ===========
 A CheckButton is displayed in two parts, a state box and an associated label identifying the purpose of the CheckButton. The CheckButton is often used to identify on/off states such as preference settings.
 
+===========
+Constructor
+===========
+The constructor for the CheckButton widget without a label is::
+
+  GtkWidget *checkbutton = gtk_check_button_new();
+
+A label can be attached to the CheckButton at construction time using::
+
+  GtkWidget *checkbutton = gtk_check_button_new_with_label(label);
+
+An accelerator can also be defined at construction using the call::
+
+  GtkWidget *checkbutton = gtk_check_button_new_with_mnemonic(label);
+
 =======
 Methods
 =======

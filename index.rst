@@ -15,6 +15,7 @@ Contents:
    button
    togglebutton
    checkbutton
+   radiobutton
    spinbutton
    linkbutton
    menubutton

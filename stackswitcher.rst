@@ -7,18 +7,18 @@ Constructor
 ===========
 The StackSwitcher can be constructed via::
 
-  stackswitcher = gtk_stack_switcher_new();
+  GtkWidget *stackswitcher = gtk_stack_switcher_new();
 
 =======
 Methods
 =======
 The StackSwitcher can be attached to the Stack via::
 
-  stackswitcher.set_stack(stack)
+  gtk_stack_switcher_set_stack(GTK_STACK_SWITCHER(stackswitcher), stack);
 
 Retrival of the associated Stack object can be made using::
 
-  stackswitcher.get_stack()
+  gtk_stack_switcher_get_stack(GTK_STACK_SWITCHER(stackswitcher));
 
 =======
 Example
