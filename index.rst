@@ -25,6 +25,7 @@ Contents:
    entrybuffer
    searchentry
    searchbar
+   accellabel
    buttonbox
    separator
    spinner
@@ -32,8 +33,20 @@ Contents:
    scale
    scalebutton
    volumebutton
+   menu
+   menubar
+   menuitem
+   checkmenuitem
+   radiomenuitem
+   separatormenuitem
    toolbar
    toolpalette
+   toolitem
+   toolbutton
+   toggletoolbutton
+   radiotoolbutton
+   menutoolbutton
+   separatortoolitem
    statusbar
    image
    frame
@@ -103,6 +116,7 @@ Contents:
    aboutdialog
    messagedialog
    assistant
+   shortcutswindow
    windowgroup
 
 Indices and tables

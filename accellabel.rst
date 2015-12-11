@@ -28,7 +28,7 @@ An accelerator can also be set manually on the AccelLabel via::
 
   gtk_accel_label_set_accel(GTK_ACCEL_LABEL(accellabel), key, modifier);
 
-The *key* defines the key value such as the letter or number to be used as the accelerator. The *modifier* defines the activating key such as :kbd:`Control` or :kdb:`Shift`.
+The *key* defines the key value such as the letter or number to be used as the accelerator. The *modifier* defines the activating key such as :kbd:`Control` or :kbd:`Shift`.
 
 =======
 Example
