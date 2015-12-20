@@ -86,6 +86,7 @@ Contents:
    cellrendererspin
    cellrenderercombo
    cellrendereraccel
+   iconview
    textview
    textbuffer
    popover
@@ -117,6 +118,8 @@ Contents:
    messagedialog
    assistant
    shortcutswindow
+   application
+   applicationwindow
    windowgroup
 
 Indices and tables
