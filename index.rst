@@ -121,6 +121,8 @@ Contents:
    application
    applicationwindow
    windowgroup
+   treemodelsort
+   treemodelfilter
 
 Indices and tables
 ==================
