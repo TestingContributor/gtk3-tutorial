@@ -90,6 +90,7 @@ Contents:
    textview
    textbuffer
    popover
+   placessidebar
    filechooser
    filechooserbutton
    filechooserdialog
