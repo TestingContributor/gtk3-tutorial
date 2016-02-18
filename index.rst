@@ -57,6 +57,7 @@ Contents:
    paned
    layout
    fixed
+   adjustment
    sizegroup
    flowbox
    listbox
