@@ -1,6 +1,6 @@
 ActionBar
 =========
-The ActionBar container provides a location on which to add contextual actions. It is commonly placed at the bottom of a window and is expanded to the full width.
+The ActionBar container provides a location on which to add contextual actions via the use of widgets such as :doc:`button` or :doc:`label`. It is commonly placed at the bottom of a Window and is expanded to the full width.
 
 ===========
 Constructor
@@ -20,6 +20,18 @@ Items can either be added at the start (left-side) or end (right-side) of the Ac
 To place items centrally within the ActionBar call::
 
   gtk_action_bar_set_center_widget(GTK_ACTION_BAR(actionbar), child);
+
+The center widget can also be retrieved via the method::
+
+  gtk_action_bar_get_center_widget(GTK_ACTION_BAR(actionbar));
+
+==========
+Properties
+==========
+The property items available for use with the ActionBar are:
+
+* ``"pack-type"`` - can be set to either ``GTK_PACK_START`` or ``GTK_PACK_END`` for left or right placement of child widgets.
+* ``"position"`` - specifies the index of the child in the ActionBar.
 
 =======
 Example
