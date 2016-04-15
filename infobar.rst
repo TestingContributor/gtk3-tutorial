@@ -20,11 +20,11 @@ The message type should be set correctly to properly alert the user of the messa
 
 The *message_type* should be set to:
 
-* ``GTK_MESSAGE_INFO``
-* ``GTK_MESSAGE_WARNING``
-* ``GTK_MESSAGE_ERROR``
-* ``GTK_MESSAGE_QUESTION``
-* ``GTK_MESSAGE_OTHER``
+* ``GTK_MESSAGE_INFO`` - display information message type.
+* ``GTK_MESSAGE_WARNING`` - display warning message type.
+* ``GTK_MESSAGE_QUESTION`` - display question message type.
+* ``GTK_MESSAGE_ERROR`` - display error message type.
+* ``GTK_MESSAGE_OTHER`` - display other message type which does not match the above.
 
 An InfoBar can display one or more buttons. These can be added via::
 

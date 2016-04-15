@@ -29,6 +29,11 @@ The range used by the LevelBar can be set post-construction::
   gtk_level_bar_set_min_value(GTK_LEVEL_BAR(levelbar), minimum);
   gtk_level_bar_set_max_value(GTK_LEVEL_BAR(levelbar), maximum);
 
+The minimum and maximum values retrieved from the LevelBar with::
+
+  gtk_level_bar_get_min_value(GTK_LEVEL_BAR(levelbar));
+  gtk_level_bar_get_max_value(GTK_LEVEL_BAR(levelbar));
+
 By default, the LevelBar (depending on orientation) fills from left-to-right or top-to-bottom. This can be inverted via::
 
   gtk_level_bar_set_inverted(GTK_LEVEL_BAR(levelbar), inverted);
@@ -42,6 +47,10 @@ The *name* parameter should be an identifier for the offset value. The *value* s
 The named offset value can be removed with::
 
   gtk_level_bar_remove_offset_value(GTK_LEVEL_BAR(levelbar), name);
+
+The LevelBar offset value is fetched from the widget via::
+
+  gtk_level_bar_get_offset_value(GTK_LEVEL_BAR(levelbar));
 
 =======
 Example

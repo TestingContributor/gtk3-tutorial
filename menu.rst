@@ -25,3 +25,7 @@ When the attached widget is activated, the Menu will be popped up via::
 A menu can be programatically removed from screen if required using::
 
   gtk_menu_popdown(GTK_MENU(menu));
+
+=======
+Example
+=======

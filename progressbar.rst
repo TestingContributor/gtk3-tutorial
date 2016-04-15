@@ -36,9 +36,17 @@ If it is unknown how long is left until a task is completed, the ProgressBar can
 
   gtk_progress_bar_pulse(GTK_PROGRESS_BAR(progressbar), pulse);
 
+The pulse step specifies the amount which the ProgressBar will increase on the ``pulse()`` method. This can be configured using::
+
+  gtk_progress_bar_set_pulse_step(GTK_PROGRESS_BAR(progressbar), step);
+
+The *step* value defines the fractional value on which to increase the progress fill.
+
 The operation of a ProgressBar usually grows from left-to-right if horizontal, or top-to-bottom if vertical. This can be inverted by calling::
 
   gtk_progress_bar_set_inverted(GTK_PROGRESS_BAR(progressbar), inverted);
+
+When the *inverted* value is set to ``TRUE``, the ProgressBar will fill right-to-left in horizontal mode, and bottom-to-top in vertical mode.
 
 =======
 Example
