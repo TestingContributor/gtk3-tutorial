@@ -17,3 +17,7 @@ The application information for a selected application can be obtained from::
 Content type specified on the AppChooser can be fetched by calling::
 
   gtk_app_chooser_get_content_type(GTK_APP_CHOOSER(appchooser));
+
+The list of applications displayed by the AppChooser can be manually reloaded with::
+
+  gtk_app_chooser_refresh(GTK_APP_CHOOSER(appchooser));

@@ -2,6 +2,8 @@ Fixed
 =====
 The Fixed container allows widgets to be placed at specified co-ordinates, with given sizes. No automatic layout management is performed on widgets that are added.
 
+An alternative to the Fixed container is the :doc:`layout` which allows a size to be specified for the available area.
+
 ===========
 Constructor
 ===========
