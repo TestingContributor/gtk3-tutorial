@@ -4,7 +4,7 @@ The FontChooserWidget is used within the :doc:`fontchooserdialog`, and is often 
 
 .. note::
 
-  The methods contained within the :doc:`fontchooser` object are used by the FontChooserWidget.
+  Internally, the FontChooserWidget uses the :doc:`fontchooser` object to perform actions such as retrieving the selected colour. See the FontChooser page for further methods.
 
 ===========
 Constructor

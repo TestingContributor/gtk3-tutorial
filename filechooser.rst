@@ -59,3 +59,8 @@ If *confirm* is set to ``FALSE``, the existing file will be overwritten without 
 When using any other action mode than ``GTK_FILE_CHOOSER_ACTION_OPEN``, the FileChooser can be configured as to whether it will offer to create new folders. This is set with::
 
   gtk_file_chooser_set_create_folders(GTK_FILE_CHOOSER(filechooser), create);
+
+=======
+Example
+=======
+Please see the :doc:`filechooserbutton`, :doc:`filechooserdialog` and :doc:`filechooserwidget` for examples of ColorChooser usage.

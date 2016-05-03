@@ -2,12 +2,20 @@ FileChooserButton
 =================
 A FileChooserButton provides a Button-style widget which when clicked launches a :doc`filechooserdialog`.
 
+.. note::
+
+  Internally, the FileChooserButton uses the :doc:`filechooser` object to perform actions such as retrieving the selected files. See the FileChooser page for further methods.
+
 ===========
 Constructor
 ===========
 The FileChooserButton is constructed using::
 
   GtkWidget *filechooserbutton = gtk_file_chooser_button_new();
+
+If a FileChooserDialog has previously been created, this can be used and attached via::
+
+  GtkWidget *filechooserbutton = gtk_file_chooser_button_new_with_dialog(filechooserdialog);
 
 =======
 Methods

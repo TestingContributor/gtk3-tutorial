@@ -2,7 +2,9 @@ FileChooserWidget
 =================
 The FileChooserWidget is used by the :doc:`filechooserdialog` and :doc:`filechooserbutton` widgets, and can also be used on its own. It provides a method of selecting both files and folders for opening or saving.
 
-Methods defined in the :doc:`filechooser` object can be used by the FileChooserWidget.
+.. note::
+
+  Internally, the FileChooserWidget uses the :doc:`filechooser` object to perform actions such as retrieving the selected files. See the FileChooser page for further methods.
 
 ===========
 Constructor

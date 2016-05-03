@@ -2,6 +2,10 @@ ColorButton
 ===========
 The ColorButton allows for the selection of a colour. The Button-like widget displays the chosen colour, and when clicked, a :doc:`colorchooserdialog` is displayed allowing the selection of the colour.
 
+.. note::
+
+  Internally, the ColorButton uses the :doc:`colorchooser` object to perform actions such as retrieving the selected colour. See the ColorChooser page for further methods.
+
 ===========
 Constructor
 ===========

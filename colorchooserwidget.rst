@@ -4,7 +4,7 @@ The ColorChooserWidget is used when the colour selection widget is to be embedde
 
 .. note::
 
-  Internally, the ColorChooserDialog uses the :doc:`colorchooser` object to perform actions such as retrieving the selected colour. See the ColorChooser page for further methods.
+  Internally, the ColorChooserWidget uses the :doc:`colorchooser` object to perform actions such as retrieving the selected colour. See the ColorChooser page for further methods.
 
 ===========
 Constructor

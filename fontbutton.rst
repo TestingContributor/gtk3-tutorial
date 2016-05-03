@@ -2,6 +2,10 @@ FontButton
 ==========
 The FontButton provides a standard Button-like display which launches a :doc:`fontchooserdialog` when clicked allowing the user to select a font, size, and style to be selected.
 
+.. note::
+
+  Internally, the FontButton uses the :doc:`fontchooser` object to perform actions such as retrieving the selected colour. See the FontChooser page for further methods.
+
 ===========
 Constructor
 ===========
