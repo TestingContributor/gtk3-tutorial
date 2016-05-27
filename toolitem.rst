@@ -37,3 +37,8 @@ In some cases, a ToolItem may be hidden or shown based on the orientation of the
 By default, some desktop environments only show an icon. If the item is important and/or commonly used, it may also be useful to display the text on the item. This is set with::
 
   gtk_tool_item_set_is_important(GTK_TOOL_ITEM(toolitem), important);
+
+=======
+Example
+=======
+An example of the ToolItem can be found on the Toolbar page.
