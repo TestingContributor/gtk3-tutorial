@@ -70,6 +70,7 @@ Contents:
    stack
    stackswitcher
    stacksidebar
+   scrollbar
    scrolledwindow
    combobox
    comboboxtext
