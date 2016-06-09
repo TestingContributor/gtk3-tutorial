@@ -16,7 +16,7 @@ Methods
 =======
 The AspectFrame values can be set after construction using::
 
-  gtk_aspect_frame_set(GTK_ASPECT_FRAME(aspectframe), label, xalign, yalign, ratio, obey_child);
+  gtk_aspect_frame_set(GTK_ASPECT_FRAME(aspectframe), xalign, yalign, ratio, obey_child);
 
 =======
 Example

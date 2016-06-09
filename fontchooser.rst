@@ -1,6 +1,6 @@
 FontChooser
 ===========
-The FontChooser object is used by the other font-family widgets. It provides a shared object which is consistent across the widgets for setting and getting font options.
+The FontChooser object is used by the other font-family widgets; :doc:`fontchooserdialog`, :doc:`fontbutton`, and :doc:`fontchooserwidget`. It provides a shared object which is consistent across the widgets for setting and getting font options.
 
 =======
 Methods
@@ -30,6 +30,8 @@ Preview text is used by the FontChooser family to display an example of the sele
 In some cases, it may be preferable to allow the user to customise the preview text with::
 
   gtk_font_chooser_set_show_preview_entry(GTK_FONT_CHOOSER(fontchooser), show);
+
+When *show* is set to ``TRUE``, an Entry widget is displayed which provides a free text field in which the user can type their own preview text.
 
 =======
 Example

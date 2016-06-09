@@ -21,3 +21,8 @@ Content type specified on the AppChooser can be fetched by calling::
 The list of applications displayed by the AppChooser can be manually reloaded with::
 
   gtk_app_chooser_refresh(GTK_APP_CHOOSER(appchooser));
+
+=======
+Example
+=======
+See the AppChooserWidget, AppChooserDialog, or AppChooserButton pages for examples.

@@ -1,6 +1,6 @@
 ColorChooser
 ============
-The ColorChooser is used by the :doc:`colorchooserdialog` and :doc:`colorchooserwidget` widgets to provide a common object used to access selected colours.
+The ColorChooser is used by the :doc:`colorchooserdialog`, :doc:`colorbutton`, and :doc:`colorchooserwidget` widgets to provide a common object used to access selected colours.
 
 =======
 Methods
