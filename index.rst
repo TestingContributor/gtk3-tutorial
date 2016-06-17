@@ -8,6 +8,7 @@ Contents:
 
    introduction
    helloworld
+   heirarchytheory
    window
    box
    grid
