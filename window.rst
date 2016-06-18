@@ -9,7 +9,9 @@ Constructor
 ===========
 The Window can be constructed using::
 
-  GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+  GtkWidget *window = gtk_window_new(type);
+
+The *type* parameter call be left empty if unneeded, but commonly it would be set to ``GTK_WINDOW_TOPLEVEL`` for main windows of an application.
 
 =======
 Methods
@@ -33,6 +35,39 @@ Using the ``show()`` call will only display the window, with other widgets subse
 Window widgets can also be hidden again with::
 
   gtk_widget_hide(window);
+
+A Window can be closed programatically with::
+
+  gtk_window_close(GTK_WINDOW(window));
+
+The default size of a Window can be set::
+
+  gtk_window_set_default_size(GTK_WINDOW(window), width, height);
+
+The state of a Window can be set using multiple methods depending on requirements::
+
+  gtk_window_maximize(GTK_WINDOW(window));
+  gtk_window_unmaximize(GTK_WINDOW(window));
+  gtk_window_fullscreen(GTK_WINDOW(window));
+  gtk_window_unfullscreen(GTK_WINDOW(window));
+
+A check can be made to see if the Window is maximized or full screen with::
+
+  gtk_window_is_maximized(GTK_WINDOW(window));
+
+A Window can be made a child of another Window object through the use of::
+
+  gtk_window_set_transient_for(GTK_WINDOW(window), parent);
+
+The icon for a particular Window is set using the function::
+
+  gtk_window_set_icon(GTK_WINDOW(window), icon);
+  gtk_window_set_icon_from_file(GTK_WINDOW(window), filename);
+
+If the Window is the primary window of an application, the method to use to ensure an icon is set for all child windows plus the main is::
+
+  gtk_window_set_default_icon(GTK_WINDOW(window), icon);
+  gtk_window_set_default_icon_from_file(GTK_WINDOW(window), filename);
 
 =======
 Example
