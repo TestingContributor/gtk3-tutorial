@@ -7,7 +7,9 @@ Constructor
 ===========
 A ToggleToolButton is constructed using the call::
 
-  GtkWidget *toggletoolbutton = gtk_toggle_tool_button_new();
+  GtkWidget *toggletoolbutton = gtk_toggle_tool_button_new(label);
+
+The *label* parameter defines the string of text to display alongside the ToggleToolButton.
 
 =======
 Methods
@@ -21,6 +23,15 @@ When *active* is set to ``TRUE``, the ToggleToolButton will appear depressed unt
 The state of the ToggleToolButton can also be retrieved using::
 
   gtk_toggle_tool_button_get_active(GTK_TOGGLE_TOOL_BUTTON(toggletoolbutton));
+
+=======
+Signals
+=======
+The commonly used signals of an ToggleToolButton are::
+
+  "toggled" (toggletoolbutton)
+
+When the user clicks on the ToggleToolButton and the state is changed to active or inactive, the ``"toggled"`` signal is emitted.
 
 =======
 Example

@@ -26,6 +26,27 @@ If required, the group value of a RadioToolButton can be obtained with::
 
   gtk_radio_tool_button_get_group(GTK_RADIO_TOOL_BUTTON(radiotoolbutton));
 
+The active status of the RadioToolButton is set with::
+
+  gtk_radio_tool_button_set_active(GTK_RADIO_TOOL_BUTTON(radiotoolbutton), active);
+
+When *active* is set to ``true``, the RadioToolButton will appear depressed, while others will appear inactive.
+
+To check whether a RadioToolButton is active, call the function::
+
+  gtk_radio_tool_button_get_active(GTK_RADIO_TOOL_BUTTON(radiotoolbutton));
+
+If the method returns ``true``, the RadioToolButton is currently active.
+
+=======
+Signals
+=======
+The commonly used signals of an RadioToolButton are::
+
+  "toggled" (radiotoolbutton)
+
+When the user clicks on the RadioToolButton and the state is changed to active or inactive, the ``"toggled"`` signal is emitted.
+
 =======
 Example
 =======
