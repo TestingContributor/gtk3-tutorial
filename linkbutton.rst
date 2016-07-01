@@ -33,6 +33,15 @@ Checking whether the LinkButton address has been visited is retrievable using::
   gtk_link_button_get_visited(GTK_LINK_BUTTON(linkbutton));
 
 =======
+Signals
+=======
+The commonly used signals of an LinkButton are::
+
+  "activate-link" (linkbutton)
+
+An ``"activate-link"`` signal is emitted when the user clicks on the LinkButton. By default, clicking on the LinkButton opens a web browser but the signal can be used to cause another function with custom behaviour to be run.
+
+=======
 Example
 =======
 Below is an example of a LinkButton:

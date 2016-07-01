@@ -23,6 +23,15 @@ The state of the Switch can be set programatically with::
   gtk_switch_set_active(GTK_SWITCH(switch), state);
 
 =======
+Signals
+=======
+The commonly use signals of a Switch are::
+
+  "notify::active" (switch, state)
+
+The ``"notify::active"`` signal emits when the Switch is toggled to either the on or off states.
+
+=======
 Example
 =======
 Below is an example of a Switch:

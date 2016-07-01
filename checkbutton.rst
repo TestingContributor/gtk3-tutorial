@@ -43,6 +43,15 @@ The label on the CheckButton is customisable post-construction with::
   gtk_button_set_label(GTK_BUTTON(checkbutton), text);
 
 =======
+Signals
+=======
+The commonly used signals of a CheckButton are::
+
+  "toggled" (checkbutton)
+
+A ``"toggled"`` signal emits from the CheckButton when the mode is changed to active or inactive.
+
+=======
 Example
 =======
 Below is an example of a CheckButton:

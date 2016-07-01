@@ -63,6 +63,17 @@ Typically, when a Button is clicked, the Button gains the input focus. In some c
 When *focus_on_click* is set to ``FALSE``, the input will remain with the main content rather than on the Button.
 
 =======
+Signals
+=======
+The commonly used signals of a Button are::
+
+  "clicked" (button)
+  "pressed" (button)
+  "released" (button)
+
+The ``"clicked"`` signal is most commonly used and emitted when the user presses, then releases the mouse button when on the Button. A ``"pressed"`` signal emits when the mouse button is pressed above the Button while ``"released"`` emits when the mouse button is released over the Button. In most cases, the ``"clicked"`` signal should be used.
+
+=======
 Example
 =======
 Below is an example of a Button:

@@ -35,7 +35,11 @@ The label displayed on the ToggleButton can be changed via::
 =======
 Signals
 =======
+The commonly used signals of an ToggleButton are::
 
+  "toggled" (togglebutton)
+
+When the ToggleButton widget is clicked, the ``"toggled"`` signal is emitted. This occurs when the state is changed from active and inactive, and vice-versa.
 
 =======
 Example

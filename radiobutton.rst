@@ -45,6 +45,16 @@ Assigning a label to the widget post-construction can be done by calling::
   gtk_radio_button_set_label(GTK_RADIO_BUTTON(radiobutton), label);
 
 =======
+Signals
+=======
+The commonly used signals of a RadioButton are::
+
+  "toggled" (radiobutton)
+  "group-changed" (radiobutton)
+
+A ``"toggled"`` signal emits from the RadioButton when the mode is changed to active or inactive. When using this signal, you will need to check which RadioButton is receiving the active or inactive state. This is down to the ``"toggled"`` signal being emitted twice; once for the RadioButton becoming active and again for the RadioButton becoming inactive. The ``"group-changed"`` signal emits whenever a RadioButton changes which group it belongs to.
+
+=======
 Example
 =======
 Below is an example of a RadioButton:
