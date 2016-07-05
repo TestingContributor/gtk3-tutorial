@@ -20,6 +20,7 @@ Contents:
    spinbutton
    linkbutton
    menubutton
+   lockbutton
    switch
    entry
    entrycompletion
@@ -42,6 +43,7 @@ Contents:
    separatormenuitem
    toolbar
    toolpalette
+   toolitemgroup
    toolitem
    toolbutton
    toggletoolbutton
