@@ -24,9 +24,39 @@ Programatically setting the text within the widget can also be done with::
 
   gtk_entry_set_text(GTK_ENTRY(entry), text);
 
-In most cases, an :doc:`entrybuffer` is not required, however it can be set using::
+Text can be inserted into specific positions via::
+
+  gtk_entry_insert_text(GTK_ENTRY(entry), text, length, position);
+
+The *text* value is the string of text to be inserted. The *length* parameter is the length of the new text being inserted, however in most cases using ``-1`` is sufficient; as GTK+ will automatically calculate the length. Finally, the *position* parameter will specify the location in number of characters where the text will be placed.
+
+Removal of text from the Entry can be done via::
+
+  gtk_entry_delete_text(GTK_ENTRY(entry), start, end);
+
+The *start* and the *end* values indicate the range of characters to be removed.
+
+An EntryBuffer or :doc:`entrycompletion` widget can be defined after construction with the calls::
 
   gtk_entry_set_buffer(GTK_ENTRY(entry), entrybuffer);
+  gtk_entry_set_completion(GTK_ENTRY(entry), entrycompletion);
+
+The EntryBuffer and EntryCompletion objecets defined can also be retrieved with::
+
+  gtk_entry_get_buffer(GTK_ENTRY(entry));
+  gtk_entry_get_completion(GTK_ENTRY(entry));
+
+A range of characters held by the Entry can be retrieved with the method::
+
+  gtk_entry_get_chars(GTK_ENTRY(entry), start, end);
+
+The *start* and *end* parameters specify the start and end of the range to fetch.
+
+The maximum number of characters which can be accepted by the Entry can be limited with::
+
+  gtk_entry_set_max_length(GTK_ENTRY(entry), maximum);
+
+If the contents of the Entry are set to longer than the *maximum* length allows, the text will be truncated.
 
 The Entry widget can also be used to enter passwords. It is good practice to mask the input and this can be done via::
 
@@ -38,15 +68,15 @@ The character used to mask the password by default is an asterisk. This can be c
 
   gtk_entry_set_invisible_char(GTK_ENTRY(entry), character);
 
-When the user enters characters into the Entry, it may be desirable to provide a completion function via an :doc:`entrybuffer`. This suggests matching results for the characters entered::
+By default, when an Entry is focused, the text within the Entry is selected. In cases where the user is not likely to want to replace all the text, an alternative function can be used to provide focus but not select the text::
 
-  gtk_entry_set_completion(GTK_ENTRY(entry), completion);
+  gtk_entry_grab_focus_without_selecting(GTK_ENTRY(entry));
 
-The maximum number of characters which can be accepted by the Entry can be limited with::
+In some cases, it is preferable to have the Entry perform an action when the user presses :kbd:`Enter`. Commonly this would be a continue function in a dialog::
 
-  gtk_entry_set_max_length(GTK_ENTRY(entry), maximum);
+  gtk_entry_set_activates_default(GTK_ENTRY(entry), activates);
 
-If the contents of the Entry are set to longer than the *maximum* length allows, the text will be truncated.
+If *activates* is set to ``TRUE``, when the user presses :kbd:`enter` or :kbd:`return` while the Entry is in focus, the default action for the Window will be run. Typically, this is used in :doc:`dialog` widgets.
 
 Placeholder text can be used to signify the purpose of the Entry with::
 
@@ -54,7 +84,21 @@ Placeholder text can be used to signify the purpose of the Entry with::
 
 When *text* is entered for display as the placeholder, it is only shown when the Entry is empty.
 
-By default, text typed in the Entry is inserted alongside any existing text. It can however be made to overwrite existing text with::
+A useful function for web browsers or other widgets which load content is to display a progress bar within the Entry::
+
+  gtk_entry_set_progress_fraction(GTK_ENTRY(entry), fraction);
+
+The *fraction* value is a number between ``0.0`` and ``1.0`` indicating 0% and 100% respectively.
+
+If required, the progress fraction can also be retrieved::
+
+  gtk_entry_get_progress_fraction(GTK_ENTRY(entry));
+
+The width of Entry in characters can be specified using the method::
+
+  gtk_entry_set_width_chars(GTK_ENTRY(entry), width);
+
+By default, text typed in the Entry is inserted prior to any existing text. It can however be made to overwrite existing text with::
 
   gtk_entry_set_overwrite_mode(GTK_ENTRY(entry), overwrite);
 
@@ -68,6 +112,19 @@ The *icon_name* parameter is based on the list of icons supported by GTK+. Alter
 
 * ``GTK_ENTRY_ICON_PRIMARY``
 * ``GTK_ENTRY_ICON_SECONDARY``
+
+Icons can also be made insensitive to prevent an action::
+
+  gtk_entry_set_icon_sensitive(GTK_ENTRY(entry), position, sensitive);
+
+When *sensitive* is set to ``false``, the icon specified will appear greyed-out.
+
+If an icon has been specified, tooltip text can also be set describing the function of the icon.
+
+  gtk_entry_set_icon_tooltip_text(GTK_ENTRY(entry), position, tooltip);
+  gtk_entry_set_icon_tooltip_markup(GTK_ENTRY(entry), position, tooltip);
+
+The ``set_icon_tooltip_text()`` takes plain text only. Alternatively, styled text can be specified using ``set_icon_tooltip_markup()``.
 
 The purpose of the Entry can be defined, and is particularly useful for users of onscreen keyboards. This is set with the method::
 

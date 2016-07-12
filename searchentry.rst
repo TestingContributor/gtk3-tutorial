@@ -14,6 +14,13 @@ The constructor for the SearchEntry is::
   GtkWidget *searchentry = gtk_search_entry_new();
 
 =======
+Methods
+=======
+.. note::
+
+  The SearchEntry inherits many methods from the Entry widget. Please see the methods section of the Entry widget for methods to use.
+
+=======
 Signals
 =======
 Although the ``"changed"`` signal can be used, it may be preferable to use the ``"search-changed"`` signal as this has a 150 millisecond delay after each text change.
