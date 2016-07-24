@@ -33,3 +33,8 @@ If the MenuItem text contains a mnemonic character, this can be activated with::
   gtk_menu_item_set_use_underline(GTK_MENU(menu), underline);
 
 When *underline* is set to ``TRUE``, the letter displayed after the underscore character will be converted into the mnemonic accelerator.
+
+=======
+Example
+=======
+For an example of the MenuItem see the :doc:`menu` page.

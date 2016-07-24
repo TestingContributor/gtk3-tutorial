@@ -50,4 +50,4 @@ When the user clicks on the RadioToolButton and the state is changed to active o
 =======
 Example
 =======
-An example of the RadioToolButton can be found on the Toolbar page.
+An example of the RadioToolButton can be found on the :doc:`toolbar` page.

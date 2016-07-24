@@ -12,4 +12,4 @@ A SeparatorToolItem is constructed using the call::
 =======
 Example
 =======
-An example of the SeparatorToolItem can be found on the Toolbar page.
+An example of the SeparatorToolItem can be found on the :doc:`toolbar` page.

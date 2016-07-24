@@ -36,4 +36,4 @@ When the user clicks on the ToggleToolButton and the state is changed to active 
 =======
 Example
 =======
-An example of the ToggleToolButton can be found on the Toolbar page.
+An example of the ToggleToolButton can be found on the :doc:`toolbar` page.

@@ -2,6 +2,13 @@ Toolbar
 =======
 A Toolbar is common in applications to provide access to common tasks. It takes the form of a horizontal bar with icons inserted which the user can quickly access. Common uses include opening and saving files, change font sizes, or launching a search function.
 
+===========
+Constructor
+===========
+Construction of the Toolbar is made using::
+
+  GtkWidget *toolbar = gtk_tool_bar_new();
+
 =======
 Methods
 =======

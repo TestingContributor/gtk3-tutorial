@@ -35,3 +35,8 @@ In some cases, the RadioMenuItem may be grouped after construction. This is done
 The group which the RadioMenuItem is a member of can be retrieved via::
 
   gtk_radio_menu_item_get_group(GTK_RADIO_MENU_ITEM(radiomenuitem));
+
+=======
+Example
+=======
+For an example of the RadioMenuItem see the :doc:`menu` page.

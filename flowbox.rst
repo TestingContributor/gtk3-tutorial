@@ -40,8 +40,8 @@ The child rows contained by the FlowBox are able to be selected or unselected us
 
 The minimum and maximum children per line can be fixed via::
 
-  gtk_flow_box_set_min_children_per_line(GTK_FLOW_BOX(flowbox), number);
-  gtk_flow_box_set_max_children_per_line(GTK_FLOW_BOX(flowbox), number);
+  gtk_flow_box_set_min_children_per_line(GTK_FLOW_BOX(flowbox), minimum);
+  gtk_flow_box_set_max_children_per_line(GTK_FLOW_BOX(flowbox), maximum);
 
 Children contained within the FlowBox can be selected by the user. This can be configured via::
 

@@ -67,4 +67,4 @@ The ``"clicked"`` signal emits from the ToolButton when the user presses and the
 =======
 Example
 =======
-An example of the ToolButton can be found on the Toolbar page.
+An example of the ToolButton can be found on the :doc:`toolbar` page.

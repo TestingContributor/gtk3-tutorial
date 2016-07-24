@@ -12,4 +12,4 @@ Construction of the SeparatorMenuItem is done with::
 =======
 Example
 =======
-An example of the SeparatorMenuItem can be found on the Menu page.
+For an example of the SeparatorMenuItem see the :doc:`menu` page.

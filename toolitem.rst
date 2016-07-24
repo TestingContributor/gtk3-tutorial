@@ -41,4 +41,4 @@ By default, some desktop environments only show an icon. If the item is importan
 =======
 Example
 =======
-An example of the ToolItem can be found on the Toolbar page.
+An example of the ToolItem can be found on the :doc:`toolbar` page.

@@ -37,3 +37,8 @@ When set to ``TRUE``, the *inconsitent* parameter allows the CheckMenuItem to di
 The inconsistent state can also be retrieved if set with::
 
   gtk_check_menu_item_get_inconsistent(GTK_CHECK_MENU_ITEM(checkmenuitem));
+
+=======
+Example
+=======
+For an example of the CheckMenuItem see the :doc:`menu` page.
