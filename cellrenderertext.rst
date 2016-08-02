@@ -45,6 +45,6 @@ Example
 =======
 Below is an example of a CellRendererText:
 
-.. literalinclude:: _examples/cellrenderertext.py
+.. literalinclude:: _examples/cellrenderertext.c
 
-Download: :download:`CellRendererText <_examples/cellrenderertext.py>`
+Download: :download:`CellRendererText <_examples/cellrenderertext.c>`
