@@ -7,7 +7,7 @@ static void destroy(GtkWidget *widget, gpointer data)
 
 static void file_selected(GtkWidget *filechooserbutton, gpointer data)
 {
-    g_print("Selected file: %s", gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(filechooserbutton)));
+    g_print("Selected file: %s\n", gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(filechooserbutton)));
 }
 
 int main(int argc, char *argv[])
