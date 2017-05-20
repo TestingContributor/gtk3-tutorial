@@ -31,9 +31,6 @@ int main(int argc, char *argv[])
     g_signal_connect(radiobutton, "toggled", G_CALLBACK(radio_button_toggled), NULL);
     gtk_box_pack_start(GTK_BOX(box), GTK_WIDGET(radiobutton), FALSE, FALSE, 0);
 
-    GSList *group;
-    group = gtk_radio_button_get_group(GTK_RADIO_BUTTON(radiobutton));
-
     radiobutton = gtk_radio_button_new_with_label(gtk_radio_button_get_group(GTK_RADIO_BUTTON(radiobutton)), "Radio Button 2");
     g_signal_connect(radiobutton, "toggled", G_CALLBACK(radio_button_toggled), NULL);
     gtk_box_pack_start(GTK_BOX(box), GTK_WIDGET(radiobutton), FALSE, FALSE, 0);
